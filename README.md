@@ -11,7 +11,6 @@
 
 ## 📸 Preview
 
-## 📸 Aperçu de l'application
 
 ![Page d'accueil](screenshots/homepage.jpg)
 
@@ -24,7 +23,7 @@
 
 ## 📋 About
 
-This project was developed as part of an **academic group project** in computer engineering at **Ibn Tofail University, Kénitra**. It demonstrates the integration of a **relational database (MySQL)** with an interactive web frontend (**Streamlit**) using **Docker** for containerized deployment.
+This project was developed as part of an **academic group project** in computer engineering at **ENSA ,UIT-Kénitra**. It demonstrates the integration of a **relational database (MySQL)** with an interactive web frontend (**Streamlit**) using **Docker** for containerized deployment.
 
 The application manages hotel rooms (standard and suites), travel agencies, reservations, and provides analytical reports (monthly cost trends, most expensive room per month, turnover by agency). The entire database is initialized and run inside a **Docker container**, ensuring reproducibility and ease of deployment.
 
@@ -61,20 +60,23 @@ The application manages hotel rooms (standard and suites), travel agencies, rese
 ## 📁 Project Structure
 
 ```
-hotel-reservation-project/
-├── docker-compose.yml
-├── .env
-├── mysqlsampledatabase.sql
-├── app.py
-├── db.py
-├── utils.py
-├── theme.css
-├── pages/
-│   ├── 0_TestConnexion.py
-│   ├── Agences.py
-│   ├── Chambres.py
-│   └── Réservations.py
-└── data/
+hotel-reservation-project1/
+├── .env                          # Environment variables (DB credentials)
+├── docker-compose.yml            # Launches MySQL, phpMyAdmin, Streamlit
+├── README.md                     # Project documentation
+├── mysql-docker/                 # MySQL initialization scripts
+│   └── data/
+│       └── mysqlsampledatabase.sql   # Database dump (hotel tables + sample data)
+├── screenshots/                  # Screenshots added to README
+└── streamlit-app/                # Main Streamlit application
+    ├── Dockerfile                # Docker build instructions
+    ├── app.py                    # Main entry point
+    ├── db.py                     # Database connection & queries
+    ├── utils.py                  # Helper functions
+    ├── requirements.txt          # Python dependencies
+    ├── assets/                   # Static images (room types, background)
+    ├── pages/                    # Multi‑page app pages
+    └── styles/                   # CSS stylesheets
 ```
 
 ---
@@ -157,16 +159,17 @@ DB_NAME = "hotel_db"
 ## 👥 Authors
 
 - **Fatima Ezzahrae** – Computer Engineering Student (ENSA Kénitra)
-- **Adam** – Computer Engineering Student
+in collaboraton with the project team 
 
 ---
 
 ## 🎓 Academic Context
 
-This project was developed at **Ibn Tofail University, Kénitra** as part of a database and web development course.
+This project was developed at **ENSA, Kénitra** as part of a database and web development course.
 
 ---
 
 ## 📄 License
 
-This project is for educational purposes only.
+**This project is for educational purposes only.**
+Feel free to browse, study, and reuse the code to better understand the applied concepts.
