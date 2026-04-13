@@ -11,8 +11,15 @@
 
 ## 📸 Preview
 
-*(Add screenshots of the application: reservation dashboard, room listing, agency map, analytics charts)*
+## 📸 Aperçu de l'application
 
+![Page d'accueil](screenshots/homepage.jpg)
+
+![Recherche d'hôtels](screenshots/reservations.jpg)
+
+![Réservation](screenshots/chambres.jpg)
+
+![Confirmation](screenshots/agences.jpg)
 ---
 
 ## 📋 About
